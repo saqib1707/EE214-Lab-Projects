@@ -1,5 +1,5 @@
 # **Digital Lab Report- String Detector FSM**
-
+----------------------------------------------------
 
 
 **EE224.vhd**
