@@ -1,6 +1,8 @@
 # **Digital Lab Report- String Detector FSM**
 ----------------------------------------------------
-
+_**What I did(in brief):**_ Initially for the RTL and Gate Level Simulation, I added all these files(bomb_fsm, gun_fsm, knife_fsm, terror_fsm) to the architecture of my top-level entity **DUT** as components.
+Then for the scan-chain, I added scan_chain.vhd,scan_reg.vhd and Toplevel.vhd to my quartus project. Now the top-level entity has to be changed to TopLevel with DUT defined as a component inside the architecture of the TopLevel.Even in the quartus project the top-level has to be modified to perform the scan-chain.
+Finally after pin-planner, compilation and generating the svf file, I transferred it to the krypton board using urjtag(open source software) and then using Tiva I tested my string detector implementation on the board.
 
 **EE224.vhd**
 
