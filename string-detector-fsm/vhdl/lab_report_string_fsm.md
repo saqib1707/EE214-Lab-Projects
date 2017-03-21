@@ -1,5 +1,7 @@
 # **Digital Lab Report- String Detector FSM**
 
+
+
 **EE224.vhd**
 
 ```vhdl
@@ -181,6 +183,7 @@ begin
 end Struct;
 ```
 
+
 **bomb_fsm.vhd**
 ```vhdl
 library ieee;
@@ -238,6 +241,7 @@ d0: DFF port map (d => nq0, clk => clk, q => q0);
 end LogicNetwork;
 ```
 
+
 **gun_fsm.vhdl**
 ```vhdl
 library ieee;
@@ -289,6 +293,7 @@ d1: DFF port map (d => nq1, clk => clk, q => q1);
 d0: DFF port map (d => nq0, clk => clk, q => q0);
 end behave;
 ```
+
 
 **knife_fsm.vhd**
 
@@ -352,6 +357,7 @@ d1: DFF port map (d => nq1, clk => clk, q => q1);
 d0: DFF port map (d => nq0, clk => clk, q => q0);
 end behave;
 ```
+
 
 **terror_fsm.vhd**
 
