@@ -66,7 +66,7 @@ architecture Behave of Testbench is
 begin
   process 
     variable err_flag : boolean := false;
-    File INFILE: text open read_mode is "/home/saqib1707/Acads/4thsem/EE214_Digital_Circuits_Lab/string-detector-fsm/vhdl/TRACEFILE.txt";
+    File INFILE: text open read_mode is "/home/saqib1707/Acads/4thsem/EE214_Digital_Circuits_Lab/string-detector-fsm/vhdl/TRACEFILE1.txt";
     FILE OUTFILE: text  open write_mode is "/home/saqib1707/Acads/4thsem/EE214_Digital_Circuits_Lab/string-detector-fsm/vhdl/OUTPUTS.txt";
 
     ---------------------------------------------------

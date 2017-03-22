@@ -32,7 +32,7 @@ G15:inverter port map (a10,a15); -- ibar
 G16:inverter port map (a11,a16); -- fbar
 G17:inverter port map (a12,a17); -- ebar
 
-G18:AND_5 port map (q2,a6,a7,a12,a0,a18);   --output
+G18:AND_5 port map (q2,a6,a7,a12,a0,w);   --output
 
 G19:AND_5 port map(a100,q1,q0,a11,a0,a19); 
 G20: AND_5 port map(q2,a6,a7,a17,a0,a20);

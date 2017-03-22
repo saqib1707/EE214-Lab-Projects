@@ -35,7 +35,7 @@ G16: inverter port map(a12,a16);  --ob
 G17: AND_5 port map(q2,a7,q0,a11,a0,w);  -- output
 
 G18: AND_5 port map(a6,q1,q0,a11,a0,a18); 
-G19: AND_5 port map(q2,a7,q0,a12,a0,a19); 
+G19: AND_5 port map(q2,a7,a8,a12,a0,a19); 
 G20: AND_5 port map(q2,a7,a8,a16,a0,a20);
 G21: AND_5 port map(q2,a7,q0,a15,a0,a21);
 G22: or_2 port map(a18,a19,a22);
@@ -43,16 +43,18 @@ G23: or_2 port map(a20,a21,a23);
 G24: or_2 port map(a22,a23,nq2);    --nq2
 
 G25: AND_5 port map(a6,a7,q0,a10,a0,a25);
-G26: AND_5 port map(a6,q1,a8,a0,'1',a26);
-G27: AND_5 port map(a6,q1,a15,'1',a0,a27);
+G26: AND_5 port map(a6,q1,a8,a0,a11,a26);
+G100: AND_5 port map(a6,q1,a8,a0,a15,a100);
+G27: AND_5 port map(a6,q1,q0,a15,a0,a27);
 G28: or_2 port map(a25,a26,a28);
-G29: or_2 port map(a28,a27,nq1);   --nq1
+G101: or_2 port map(a100,a27,a101);
+G29: or_2 port map(a28,a101,nq1);   --nq1
 
 G30: AND_5 port map(a6,a7,a8,a9,a0,a30);
 G31: AND_5 port map(a6,q1,a8,a11,a0,a31);
 G32: AND_5 port map(q2,a7,a8,a12,a0,a32);
 G33: AND_5 port map(a6,a7,q0,a14,a0,a33);
-G34: AND_5 port map(a6,a7,a8,a15,a0,a34);
+G34: AND_5 port map(a6,q1,q0,a15,a0,a34);
 G35: AND_5 port map(q2,a7,q0,a15,a0,a35);
 G36: or_2 port map(a30,a31,a36);
 G37: or_2 port map(a32,a33,a37);
